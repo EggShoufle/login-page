@@ -23,9 +23,9 @@ function App() {
               <span></span>
               <label>Password</label>
             </div>
-            <div className="forgetPass">Lupa Password?</div>
+            <div className="forgetPass">Forget Password?</div>
             <button type="submit">Login</button>
-            <div className="signup_link">Belum punya akun? Daftar</div>
+            <div className="signup_link">Don't have an account? Sign up</div>
           </div>
         </form>
       </div>
