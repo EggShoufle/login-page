@@ -7,16 +7,27 @@ function App() {
     <div className="App">
       <div className="Container">
         <div className="login-image">
-        <img src="/Assets/logo.svg" width="350"/>
+          <img src="/Assets/logo.svg" alt="this is" width="350"/>
         </div>
-        <div className="login">
-          <h1>Login</h1>
-          <input type="text" className="input" placeholder="Your Username"></input><br />
-          <input type="password" className="input" placeholder="Your Password"></input><br />
-          <button type="submit">Login</button>
-          <p>Lupa Password?</p>
-          <p>Belum punya akun? Daftar</p>
-        </div>
+        <form>
+          <div className="login">
+            <h1>Login</h1>
+            <div className="txt_field">
+              <input type="text" className="username" required></input>
+              <span></span>
+              <label>Username</label>
+            </div>
+            <br />
+            <div className="txt_field">
+              <input type="password" className="psw" required></input>
+              <span></span>
+              <label>Password</label>
+            </div>
+            <div className="forgetPass">Lupa Password?</div>
+            <button type="submit">Login</button>
+            <div className="signup_link">Belum punya akun? Daftar</div>
+          </div>
+        </form>
       </div>
     </div>
   );

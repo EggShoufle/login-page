@@ -17,20 +17,66 @@
 .login-image{
     align-items: center;
     margin: 100px 50px;
+    background-color: aqua;
 }
 
 .login{
-    
     padding: 80px;
+    margin-bottom: 10px;
     float: right;
     align-items: center;
     align-content: center;
+    
 }
 .login h1 {
     text-align: center;
+    
 }
 
-.input{
-    margin: 10px;
+form .txt_field{
+    position: relative;
+    border-bottom: 2px solid none;
+    margin: 8px 0;
 }
 
+.txt_field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 32px;
+    font-size: 16px;
+    border: 0;
+    outline: none;
+    background-color: #ecebeb;
+}
+
+.txt_field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    transition: .5s;
+}
+
+.txt_field span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #2691d9;
+    transition: .5s;
+}
+
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+    top: -14px;
+    color: #2691d9;
+}
+
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before{
+    width: 100%;
+}
